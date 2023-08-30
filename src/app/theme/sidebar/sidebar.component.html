@@ -1,0 +1,69 @@
+
+ <div class="hamburger-menu">
+    <input type="checkbox" style="visibility: hidden;"  id="checkbox-hamburger-menu"  [(ngModel)]="openSidebar"/>
+    <label class="label-hamburger-menu" for="checkbox-hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </label>
+  </div>
+  
+  
+
+<div class="sidebar" [class.sidebar-close]="!openSidebar">
+  <div class="search-icon">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="search" placeholder="Search here.....">
+  </div>
+   
+    <ul class="nav-links" id="nav-links">
+      <li *ngFor="let item of menuSidebar" #itemEl routerLinkActive="active">
+        <div *ngIf="item.sub_menu.length == 0" class="dropdown-title">
+          <a [routerLink]="[item.link]">
+            <i [class]="item.icon"></i>
+            <span class="link_name">{{ item.link_name }}</span>
+          </a>
+        </div>
+        <div
+          *ngIf="item.sub_menu.length > 0"
+          class="dropdown-title"
+          (click)="showSubmenu(itemEl)"
+        >
+          <a>
+            <i [class]="item.icon"></i>
+            <span class="link_name">{{ item.link_name }}</span>
+          </a>
+          <i class="fa-solid fa-angle-down" style="font-size: 11px; color: var(--primary-color);"></i>
+        </div>
+        <ul class="sub-menu" [class.blank]="item.sub_menu.length == 0">
+          <li>
+            <a class="link_name">{{ item.link_name }}</a>
+          </li>
+          <li *ngFor="let item_sub of item.sub_menu" routerLinkActive="active">
+            <a [routerLink]="[item_sub.link]"> <i [class]="item.icon"></i> {{ item_sub.link_name }}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    
+
+
+    <div class="profile">
+      <div class="icon">
+        <span>B</span>
+      </div>
+      <div class="info">
+        <h3>Bishir Enterprises</h3>
+        <p>Company ID:  10031</p>
+        <i class="fa-solid fa-angle-right"></i>     
+      </div>
+
+    </div>
+  </div>
+
+
+ 
+  
+  
+  

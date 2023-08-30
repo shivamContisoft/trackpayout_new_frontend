@@ -1,0 +1,31 @@
+.breadcrumb-box{
+margin: 10px 0;
+
+    h2{
+        font-size: 14px;
+        color: var(--primary-color);
+        margin: 0;
+        font-weight: 500;
+    }
+
+    .breadcrumb{
+        float: right;
+
+        .breadcrumb-item{
+            color: #878787;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        .breadcrumb-item.active{
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+    }
+
+
+
+
+}
+
