@@ -1,0 +1,419 @@
+<!-- <app-breadcrums [componentHeading]="compHead" [main]="main" [sub]="sub"></app-breadcrums> -->
+
+<div class="dashboard">
+
+
+    <div class="col-lg-12 col-md-12 pl-0 pr-0 card card1" id="element-to-print" cardClass="tab-card">
+        <div  class="graph-card">
+            <h6>Select Customer </h6>
+                <div>
+                        
+                    <select class="form-select txt5" aria-label="Default select example">
+                        <option selected>A4</option>
+                        <option value="1">Aradhya</option>
+                        <option value="2">Bishir</option>
+                        <option value="3">Chroma</option>
+                        <option value="4">Aradhya</option>
+                        <option value="5">Bishir</option>
+                        <option value="6">Chroma</option>
+                    </select>               
+                </div>  
+        </div> 
+    </div>
+    
+    <div class="col-xl-12">
+      
+        <div class="container-fluid background">
+            <div class="cardback">  
+                <div class="col-md-3 float-md-left pl-0 box">
+                    <div class="box1">
+                        <div class="img">
+                            <img src="../../../assets/Payment terms.png" alt="">
+                        </div> 
+                        <div class="payment-title">
+                            <h5>Payment Days</h5>   
+                            <span class="timely">10 Days</span>
+                        </div>    
+                    </div>
+                   
+                </div>
+                <div class="col-md-3 float-md-left pl-0 box">
+                    <div class="box2">
+                        <div class="img">
+                            <img src="../../../assets/Average.png" alt="">
+                        </div> 
+                        <div class="payment-title">
+                            <h5>Average Payment Days</h5>   
+                            <span class="overdue">20 Days</span>
+                        </div>    
+                    </div>
+                   
+                </div>
+                <div class="col-md-3 float-md-left pl-0 box">
+                    <div class="box2">
+                        <div class="img">
+                            <img src="../../../assets/Overdue.png" alt="">
+                        </div> 
+                        <div class="payment-title">
+                            <h5>Total Overdue Bill Amount</h5>   
+                            <span class="overdue">960.00</span>
+                        </div>    
+                    </div>
+                   
+                </div>
+                <div class="col-md-3 float-md-left pl-0 box">
+                    <div class="box2">
+                        <div class="img">
+                            <img src="../../../assets/ClosingBalance.png" alt="">
+                        </div> 
+                        <div class="payment-title">
+                            <h5>Total Closing Balance</h5>   
+                            <span class="timely">4,297,584.00</span>
+                        </div>    
+                    </div>
+                   
+                </div>
+                
+            </div>
+        
+    
+            
+        </div>
+    
+        <div class=" col-md-12 col-xl-12 chart background">
+            
+            <div class="col-sm-12" >
+                <div class="card-head">
+                    <h2 class="card-head txt3">Month wise Amount status<i
+                            class="fa-solid fa-rotate-right"></i>
+                    </h2>
+                </div>
+    
+                <!-- <select class="select-cols"  style="margin-top: 36px; margin-left: 41px;" >
+                    <option value="area">Line-Chart</option>
+                    <option value="bar">Bar-Chart</option>
+                </select>
+    
+                
+                <select class="select-cols" >
+                    <option value="lastmonth">Last Month</option>
+                    <option value="currentmonth">Current Month</option>
+                    <option selected value="currentyear">Current Year</option>
+                </select> -->
+               
+                <div class="dropdown txtdrop">
+                        <button class=" primary-drop dropdown-toggle " type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-chart-simple"></i> &nbsp;Bar Chart
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        <button class=" primary-drop dropdown-toggle btn1" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Current Year &nbsp;
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Current Month</a></li>
+                            <li><a class="dropdown-item" href="#">Last Month</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                        <button class=" primary-drop dropdown-toggle btn1" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Month Wise Amount Status &nbsp;
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Total Sales/Receipt/CreditNote</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Last Month</a></li> -->
+                            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                </div>
+    
+                
+                
+                <br>
+               
+            </div>
+            
+            <div id="chart">
+                <apx-chart [series]="chartOptions2.series" [chart]="chartOptions2.chart"
+                    [dataLabels]="chartOptions2.dataLabels" [plotOptions]="chartOptions2.plotOptions"
+                    [yaxis]="chartOptions2.yaxis" [legend]="chartOptions2.legend" [fill]="chartOptions2.fill"
+                    [stroke]="chartOptions2.stroke" [tooltip]="chartOptions2.tooltip"
+                    [xaxis]="chartOptions2.xaxis"></apx-chart>
+            </div>
+            
+    
+            <div class="col-md-12 col-lg-12 background1">
+                <div class="table-responsive table-res" style=" margin-bottom: 0;">
+                    <table style=" margin-bottom: 0;">
+                        <thead class="tablehead">
+                            <tr>
+            
+                                <th scope="col" style="width: 50px;font-size: smaller;">Month</th>
+                                <th scope="col" style="width: 97px;">Apr</th>
+                                <th scope="col" style="width: 97px;">May</th>
+                                <th scope="col" style="width: 97px;">Jun</th>
+                                <th scope="col" style="width: 97px;">Jul</th>
+                                <th scope="col" style="width: 97px;">Aug</th>
+                                <th scope="col" style="width: 97px;">Sep</th>
+                                <th scope="col" style="width: 97px;">Oct</th>
+                                <th scope="col" style="width: 97px;">Nov</th>
+                                <th scope="col" style="width: 97px;">Dec</th>
+                                <th scope="col" style="width: 97px;">Jan</th>
+                                <th scope="col" style="width: 97px;">Feb</th>
+                                <th scope="col" style="width: 97px;">Mar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th  style="width: 60px;">Sales</th>
+                                <td>8000</td>
+                                <td>2270</td>
+                                <td>0</td>
+                                <td>2250</td>
+                                <td>19</td>
+                                <td>399</td>
+                                <td>5000</td>
+                                <td>7633</td>
+                                <td>367</td>
+                                <td>456</td>
+                                <td>234</td>
+                                <td>897</td>
+                            </tr>
+                            <tr>
+                                <th style="width: 60px;">Receipt</th>
+                               
+                                <td>4025</td>
+                                <td>4500</td>
+                                <td>4550</td>
+                                <td>456</td>
+                                <td>399</td>
+                                <td>55</td>
+                                <td>60</td>
+                                <td>786</td>
+                                <td>3427</td>
+                                <td>745</td>
+                                <td>457</td>
+                                <td>432</td>
+                            </tr>
+                            <tr>
+                                <th style="width: 60px;">Credit Note</th>
+                               
+                                <td>4325</td>
+                                <td>450</td>
+                                <td>550</td>
+                                <td>400</td>
+                                <td>3990</td>
+                                <td>558</td>
+                                <td>603</td>
+                                <td>786</td>
+                                <td>363</td>
+                                <td>7665</td>
+                                <td>4500</td>
+                                <td>432</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+           
+        </div>
+        
+    
+        
+        </div>
+        <!-- <div class="row">
+    
+        
+        <div class="col-lg-6 col-md-6 background back">
+             <div class="col-lg-6 col-md-6"> -->
+                <!-- <div class="sales-chart">
+                    <select class="select-cols">
+                        <option value="bar">Bar-Chart</option>
+                        <option value="area">Line-Chart</option>
+                    </select>
+    
+                    <h5><b>Total Sales/Receipt/CreditNote</b></h5>
+                    <br>
+                </div> -->
+    
+            
+    
+            <!-- <div class="">
+                <div class="chart-box"  id="OverViewPieChart">
+                    
+                        <div id="chart1">
+                            <apx-chart [series]="chartOptions1.series" [chart]="chartOptions1.chart"
+                                [dataLabels]="chartOptions1.dataLabels" [plotOptions]="chartOptions1.plotOptions"
+                                [yaxis]="chartOptions1.yaxis" [legend]="chartOptions1.legend" [fill]="chartOptions1.fill"
+                                [stroke]="chartOptions1.stroke" [tooltip]="chartOptions1.tooltip"
+                                [xaxis]="chartOptions1.xaxis"></apx-chart>
+                        </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="table-res">
+                        <table class="" style="background-color: white; margin-bottom: 0;">
+                            <thead>
+                                <tr>
+                                    <th scope="col-2">#</th>
+                                    <th scope="col-2" style="color: rgb(14, 158, 74)">Total Sales</th>
+                                    <th scope="col-2" style="color: rgb(14, 158, 74)">Total Receipt</th>
+                                    <th scope="col-2" style="color: rgb(14, 158, 74)">Total Credit Note</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Value</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+             -->
+        <!-- </div>  -->
+        <!-- <div class="col-md-6 col-lg-6">
+            <p>lorem10</p>
+        </div> -->
+        <!-- </div> -->
+       
+            <!-- <div class="col-md-6">
+                <div class="background">
+                    <div class="col-lg-6 col-md-6"> 
+                        <div class="sales-chart">
+                            <select class="select-cols">
+                                <option value="bar">Bar-Chart</option>
+                                <option value="area">Line-Chart</option>
+                            </select>
+            
+                            <h5><b>Total Sales/Receipt/CreditNote</b></h5>
+                            <br>
+                        </div>
+            
+                    
+            
+                    <div class="">
+                        <div class="chart-box"  id="OverViewPieChart">
+                            
+                                <div id="chart1">
+                                    <apx-chart [series]="chartOptions1.series" [chart]="chartOptions1.chart"
+                                        [dataLabels]="chartOptions1.dataLabels" [plotOptions]="chartOptions1.plotOptions"
+                                        [yaxis]="chartOptions1.yaxis" [legend]="chartOptions1.legend" [fill]="chartOptions1.fill"
+                                        [stroke]="chartOptions1.stroke" [tooltip]="chartOptions1.tooltip"
+                                        [xaxis]="chartOptions1.xaxis"></apx-chart>
+                                </div>
+                            </div> 
+                            <div class="table-res">
+                                <table class="" style="background-color: white; margin-bottom: 0;">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col-2">#</th>
+                                            <th scope="col-2" style="color: rgb(14, 158, 74)">Total Sales</th>
+                                            <th scope="col-2" style="color: rgb(14, 158, 74)">Total Receipt</th>
+                                            <th scope="col-2" style="color: rgb(14, 158, 74)">Total Credit Note</th>
+                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Value</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                           
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> -->
+            <div class="col-lg-12 col-md-12">
+                <div class="card-head">
+                    <h2 class="card-head txt4">Stock Item Sale Details<i
+                            class="fa-solid fa-rotate-right"></i>
+                    </h2>
+                </div>
+               
+                <div class="table-res background">
+                    
+                    <!-- <h5><b>Stock Item Sale Details</b></h5> -->
+                    <table class="" style="background-color: white; margin-bottom: 0; border: none;">
+                        <thead class="headings">
+                            <tr>
+                                <th scope="col-2">S.NO</th>
+                                <th scope="col-2" >STOCK ITEM</th>
+                                <th scope="col-2" >QUANTITY</th>
+                                <th scope="col-2" >AMOUNT</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="head" style="
+                                border: 
+                                none;">
+                                <td>1</td>
+                                <td>candy</td>
+                                <td>156</td>
+                                <td>7800.00</td>
+                               
+                            </tr>
+                            <tr class="head">
+                                <td>2</td>
+                                <td>candy</td>
+                                <td>156</td>
+                                <td>7800.00</td>
+                               
+                            </tr>
+                            <tr class="head">
+                                <td>3</td>
+                                <td>candy</td>
+                                <td>156</td>
+                                <td>7800.00</td>
+                               
+                            </tr>
+                            <tr class="head">
+                                <td>4</td>
+                                <td>candy</td>
+                                <td>156</td>
+                                <td>7800.00</td>
+                               
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        
+    
+    
+            <!-- <div class="table-responsive table-scroll">
+                <table class="table">
+                    <tr class="txt">
+                        <th><input type="checkbox" class="check "></th>
+                        <th>S.no</th>
+                        <th>Stock item</th>
+        
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                        <th>Advocate Assigned</th> 
+                       
+                    </tr>
+     
+                </table>
+            </div> -->
+    
+          
+        
+    </div>

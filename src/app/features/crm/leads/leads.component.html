@@ -1,0 +1,413 @@
+
+<div class="graph-card">
+
+    <div class="card-head">
+        <h2 class="card-head">Leads Dashboard<i
+                class="fa-solid fa-rotate-right"></i>
+        </h2>
+    </div>
+    <div class="clearfix"></div>
+    <div class="create mt-4 mb-4">
+        <button class="primary-drop" type="button" aria-expanded="false" (click)="openModel()" data-bs-toggle="modal" data-bs-target="#myModal">
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>&nbsp; Generate Lead
+        </button>
+    </div>
+    <div class="card-head1 space">
+
+        <div class="btnspace mb-2">   
+            <!-- <input class="from-control" type = "date" placeholder="From date">   -->
+            <input type="date" class="form-control form-input search" placeholder="">
+        </div>
+        <div class="btnspace mb-2">   
+            <!-- <input class="from-control" type = "date" placeholder="To date">   -->
+            <input type="date" class="form-control form-input search" placeholder="">
+        </div>
+        <button class="primary-drop dropdown-toggle mb-2 btnspace" type="button"
+            aria-expanded="false">
+            &nbsp; Submit
+        </button>
+        <button class="primary-drop dropdown-toggle mb-2" type="button"
+            aria-expanded="false">
+            &nbsp; Reset
+        </button>
+    </div>
+
+
+    <div class="row mt-3 mb-3">
+        <div class="col-md-3">
+            <div class="white-card">
+                <i class="fa-solid fa-rotate-right"></i>
+                <div class="card-head">
+                    
+                    <h2><b>Total Leads</b></h2>
+                </div>
+            
+                <div class="status">
+                    <h1 class="green">3</h1>
+                </div>
+    
+    
+                <!-- <div class="col-md-9 float-md-start">
+                    <h3>&#8377; 7,343,335.63</h3>
+                </div>
+                <div class="col-md-3 float-md-end graph">
+                    <p class="green"><img src="../../../assets/trend.png" alt=""> 16.9%</p>
+                </div> -->
+                <div class="clearfix"></div>
+            </div>
+    
+    
+        </div>
+        <div class="col-md-3">
+            <div class="white-card">
+                <i class="fa-solid fa-rotate-right"></i>
+                <div class="card-head">
+                    <h2><b>Total Live Leads</b></h2>
+                </div>
+                 <div class="status">
+                    <h1 class="red">1</h1>
+                </div> 
+    
+                <!-- <div class="col-md-9 float-md-start">
+                    <h3>&#8377; 125,651.00</h3>
+                </div>
+                <div class="col-md-3 float-md-end graph">
+                    <p class="red"><img src="../../../assets/downarrow.png" alt=""> 0.9%</p>
+                </div>  -->
+                <div class="clearfix"></div>
+    
+    
+            </div>
+    
+        </div>
+
+        
+    
+        <div class="col-md-3">
+            <div class="white-card">
+                <i class="fa-solid fa-rotate-right"></i>
+                <div class="card-head">
+                    <h2><b>Total Qualified Leads</b></h2>
+                </div>
+               
+                <div class="status">
+                    <h1 class="green">1</h1>
+                </div>
+    
+                <!-- <div class="col-md-9 float-md-start">
+                    <h3>&#8377; 402.203.03</h3>
+                </div>
+                <div class="col-md-3 float-md-end graph">
+                    <p class="green"><img src="../../../assets/trend.png" alt=""> 16.9%</p>
+                </div>  -->
+                <div class="clearfix"></div>
+    
+    
+            </div>
+    
+        </div>
+
+        <div class="col-md-3">
+            <div class="white-card">
+                <i class="fa-solid fa-rotate-right"></i>
+                <div class="card-head">
+                    <h2><b>Total Junk/Lost Leads
+
+                    </b></h2>
+                </div>
+                <div class="status">
+                    <h1 class="red">0</h1>
+                </div>
+    
+                <!-- <div class="col-md-9 float-md-start">
+                    <h3>&#8377; 402.203.03</h3>
+                </div>
+                <div class="col-md-3 float-md-end graph">
+                    <p class="green"><img src="../../../assets/trend.png" alt=""> 16.9%</p>
+                </div>  -->
+                <div class="clearfix"></div>
+    
+    
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="card-head1 space">
+        <div class="col-md-6 btns">
+
+        <button class="btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp;Search in All
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+        <input type="text" class="form-control form-input search btnspace" placeholder="Search Here">
+
+        <!-- <button class=" btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp; Search here
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul> -->
+    </div>
+
+    <!-- <div class="card-head1"> -->
+        <div class="col-md-6">
+
+            <button class=" btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp; Select an Action
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            <button class="primary-drop dropdown-toggle" type="button"
+                aria-expanded="false">
+                <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i>&nbsp; Download
+            </button>
+        </div>
+    </div>
+
+    
+    <div class="clearfix"></div>
+
+    <div class="table-responsive table-scroll">
+        <table class="table">
+            <tr class="txt">
+                <!-- <th><input type="checkbox" class="check "></th> -->
+                <th>S.no</th>
+                <th>Lead Code</th>
+
+                <th>Lead Date</th>
+                <th>Sales Executive</th>
+                <th>Customer Name</th>
+
+                <th>Lead Amount</th>
+                <th>Lead Status</th>
+                
+                
+            </tr>
+
+           
+        </table>
+    </div>
+<div>
+
+    <!-- <button class="primary-drop" type="button" aria-expanded="false">
+        Back to Dashboard
+    </button> -->
+    <div class="divide">
+
+        <button class="primary-drop " type="button" aria-expanded="false">
+            Back to Dashboard
+        </button>
+        <div class="pagination mt-2">
+        
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl" style="width: 1150;">
+        <div class="modal-content">
+            <div class="modal-head headings">
+                        <h3 class="modal-title">Generate New Lead</h3>
+                        <button type="button" class="close btnclose" (click)="closeModel()" data-bs-dismiss="modal">&times;</button> 
+                        <!-- <span class="field">'*' mark Fields are Mandatory</span> -->
+            </div>
+                    <div class="modal-body">
+                        <form>
+                    
+                            <div class="row">
+                                <div class="">
+                                    <h3 class="modal-title">Info</h3>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label for="Name Of Sales Person">Name Of Sales Person</label>
+                                        <select class="form-select mb-2">
+                                            <option>Select Name Of Sales Person</option>
+                                            <option value="micro">Manu</option>
+                                            <option value="small">Test</option>
+                                            <!-- <option value="micro">Agriculture</option>
+                                            <option value="small">Arts and Entertainment</option>
+                                            <option value="micro">Agriculture</option>
+                                            <option value="small">Arts and Entertainment</option> -->
+                                        </select>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label for="Customer Name">Customer Name</label>
+                                    <select class="form-select mb-2">
+                                        <option>Select Customer Name</option>
+                                        <option value="micro">A4</option>
+                                        <option value="small">A67</option>
+                                        <!-- <option value="micro">Agriculture</option>
+                                        <option value="small">Arts and Entertainment</option>
+                                        <option value="micro">Agriculture</option>
+                                        <option value="small">Arts and Entertainment</option> -->
+                                    </select>
+                                </div>
+                                
+                                <div class="col-md-4 mb-2">
+                                    <label for="Customer Email">Customer Email</label>
+                                    <input type="email" class="form-control" placeholder="" required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="Enquiry Source">Enquiry Source</label>
+                                        <select class="form-select mb-2">
+                                            <option>Select Enquiry Source</option>
+                                            <option value="micro">Website</option>
+                                            <option value="small">WhatsApp</option>
+                                            <!-- <option value="micro">Agriculture</option>
+                                            <option value="small">Arts and Entertainment</option>
+                                            <option value="micro">Agriculture</option>
+                                            <option value="small">Arts and Entertainment</option> -->
+                                        </select>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="Status">Status</label>
+                                    <select class="form-select mb-2">
+                                        <option>Status</option>
+                                        <option value="micro">Lost Lead</option>
+                                        <option value="small">Contacted</option>
+                                        <!-- <option value="micro">Agriculture</option>
+                                        <option value="small">Arts and Entertainment</option>
+                                        <option value="micro">Agriculture</option>
+                                        <option value="small">Arts and Entertainment</option> -->
+                                    </select>
+                                </div>
+                                
+                              
+                                <div class="row">
+                                    <div class="">
+                                        <h3 class="modal-title">Product Info</h3>
+                                    </div>
+                                    <div class="col-md-6 mb-2">
+                                        <label for="Stock Item">Choose Stock Item</label>
+                                            <select class="form-select mb-2">
+                                                <option>Select Stock Item</option>
+                                                <option value="micro">Books</option>
+                                                <option value="small">Bluetooth</option>
+                                                <!-- <option value="micro">Agriculture</option>
+                                                <option value="small">Arts and Entertainment</option>
+                                                <option value="micro">Agriculture</option>
+                                                <option value="small">Arts and Entertainment</option> -->
+                                            </select>
+                                    </div>
+                                    <div class="col-md-12 mb-2">
+                                        <label for="Product Description">Product Description</label>
+                                            <textarea name="product description" id="" cols="" rows="" class="form-control "></textarea>
+                                    </div>
+                                    <div class="col-md-3 mb-2">
+                                        <label for="Quantity">Quantity</label>
+                                        <input type="Number" class="form-control" placeholder="0" required>
+                                    </div>
+                                    <div class="col-md-3 mb-2">
+                                        <label for="Unit">Unit</label>
+                                        <input type="Number" class="form-control" placeholder="0" required>
+                                    </div>
+                                    <div class="col-md-3 mb-2">
+                                        <label for="Rate">Rate</label>
+                                        <input type="Number" class="form-control" placeholder="0" required>
+                                    </div>
+                                    <div class="col-md-3 mb-2">
+                                        <label for="Disc%">Disc%</label>
+                                        <input type="Number" class="form-control" placeholder="0" required>
+                                    </div>
+                                    <div class="col-md-3 mb-2">
+                                        <label for="GST%">GST%</label>
+                                        <input type="Number" class="form-control" placeholder="0" required>
+                                    </div>
+                                    <div class="col-md-3 mt-4">
+                                        <!-- <label for="GST%">GST%</label> -->
+                                        <input type="radio" class="" placeholder="0" >InterState
+                                        <input type="radio" class="" placeholder="0" >State
+                                    </div>
+                                    <div class="col-md-3 mb-2">
+                                        <label for="Amount">Total Amount</label>
+                                        <input type="Number" class="form-control" placeholder="0" required>
+                                    </div>
+                                    <div class="col-md-3 mb-2">
+                                        
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Add Item</button>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                  Create new company with these details 
+                                </label>       -->
+                    </div>
+
+                    <div class="table-responsive table-scroll">
+                        <table class="table">
+                            <tr class="txt">
+                                <!-- <th><input type="checkbox" class="check "></th> -->
+                                <th>S.no</th>
+                                <th>Product Description</th>
+                
+                                <th>Quantity</th>
+                                <th>Rate</th>
+                                <th>Disc%</th>
+                                <th>GST%</th>
+                                <th>Total Amount </th>
+                                <th>action</th>
+                
+                                <!-- <th>Total No. of Qualified Leads </th>
+                                <th>Qualified Lead Value</th>
+                                <th>Revenue Value </th> -->
+                                
+                            </tr>
+                
+                           
+                        </table>
+                    </div>
+                
+
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <label for="terms">Terms And Condition</label>
+                            <textarea name="Terms And Condition" id="" cols="" rows="" class="form-control "></textarea>
+                        </div>
+                    </div>
+
+                            
+                            <!-- <button class="btn btn-primary disabled" type="submit">Save</button> -->
+                           
+            </form>
+        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" (click)="closeModel()" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btnspace btn-primary disabled" (click)="closeModel()" data-bs-dismiss="modal">Submit</button>
+                    </div>
+                   
+                  
+                  </div>
+              
+                </div>
+</div>
+

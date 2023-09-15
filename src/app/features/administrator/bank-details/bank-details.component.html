@@ -1,0 +1,155 @@
+<div class="graph-card">
+
+    <div class="card-head">
+        <h2 class="card-head">Bank Details<i
+                class="fa-solid fa-rotate-right"></i>
+        </h2> 
+    </div>
+    <div class="clearfix"></div>
+    <div class="create mt-2">
+        <button class="primary-drop" type="button" aria-expanded="false" (click)="openModel()" data-bs-toggle="modal" data-bs-target="#myModal">
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>&nbsp; Add Bank A/C
+        </button>
+    </div>
+    <div class="clearfix"></div>
+    <div class="card-head1">
+            <input type="text" class="form-control form-input search" placeholder="Search Here">
+            <button class="btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp;Search in All
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Search in All</a></li>
+            <li><a class="dropdown-item" href="#">First Name</a></li>
+            <li><a class="dropdown-item" href="#">Last Name</a></li>
+            <li><a class="dropdown-item" href="#">Designation</a></li>
+            <li><a class="dropdown-item" href="#">Created At</a></li>
+            <li><a class="dropdown-item" href="#">Email</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+        </ul>
+        <button class=" btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Select an Action
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Edit</a></li>
+            <li><a class="dropdown-item" href="#">Remove</a></li>
+            
+        </ul>
+        <!-- <button class=" btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp; Search here
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul> -->
+        <button class="primary-drop dropdown-toggle" type="button"
+            aria-expanded="false">
+            <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i>&nbsp; Download
+        </button>
+    </div>
+
+
+<div class="clearfix"></div>
+
+<div class="table-responsive table-scroll">
+    <table class="table">
+        <tr class="txt">
+            <!-- <th><input type="checkbox" class="check "></th> -->
+            <th>#</th>
+            <th>Bank name</th>
+            <th>A/C no</th>
+            <th>A/C Types</th>
+            <th>IFSC Code</th>
+            
+            <th>Inserted At</th>
+            
+        </tr>
+    </table>
+</div>
+
+<div class="pagination">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+</div>
+
+
+<!-- Modal -->
+<!-- <div class="row"> -->
+    <!-- <div class="col-lg-12"> -->
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-xl" style="width: 1150;">
+              <div class="modal-content">
+                <div class="modal-head headings">
+                    <h4 class="modal-title">Add Bank Details</h4>
+                    <span class="field">'*' mark Fields are Mandatory</span>
+                    <button type="button" class="close btnclose" (click)="closeModel()" data-bs-dismiss="modal">&times;</button> 
+                </div>
+                <div class="modal-body">
+                    <form>
+                
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label for="Bank Name">Bank Name</label>
+                                <input type="text" class="form-control" placeholder="Bank Name" required>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="A/C Holder">A/C Holder</label>
+                                <input type="text" class="form-control" placeholder="A/C Holder" required>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="A/C Number">A/C Number</label>
+                                <input type="text" class="form-control" placeholder="A/C Number" required>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="A/C Type">A/C Type</label>
+                                        <select class="form-select mb-2" >
+                                            <option >Select A/C Type</option>
+                                            <option value="Current">Current</option>
+                                            <option value="Savings">Savings</option>
+                                            <option value="fixed">Fixed deposit A/C</option>
+                                            <option value="deposit">Recurring Deposit A/C</option>
+                                            <option value="account">NRI Account</option>
+                                        </select>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="IFSC Code">IFSC Code</label>
+                                <input type="text" class="form-control" placeholder="" required>
+                            </div>
+                            
+                            
+                          
+                            
+                            
+                        
+                </div>
+                        
+                      
+        </form>
+    </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" (click)="closeModel()" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btnspace btn-primary disabled" (click)="closeModel()" data-bs-dismiss="modal">Submit</button>
+                </div>
+               
+              
+              </div>
+          
+            </div>
+          </div>
+    <!-- </div> -->
+
+<!-- </div> -->
+</div>
+

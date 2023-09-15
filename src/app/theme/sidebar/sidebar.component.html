@@ -42,6 +42,7 @@
           <li *ngFor="let item_sub of item.sub_menu" routerLinkActive="active">
             <a [routerLink]="[item_sub.link]"> <i [class]="item.icon"></i> {{ item_sub.link_name }}</a>
           </li>
+         
         </ul>
       </li>
     </ul>

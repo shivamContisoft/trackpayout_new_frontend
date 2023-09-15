@@ -1,0 +1,239 @@
+// @import "node_modules/bootstrap/scss/bootstrap";
+
+/* 
+    Inline div start here
+*/
+
+div.inline {
+    display: inline;
+    /* the default for span */
+}
+
+/*
+    Table style configurations goes here
+*/
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table td {
+    cursor: pointer;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: x-small;
+    font-weight: bold;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(44, 62, 80);
+    color: white;
+    position: -webkit-sticky; // this is for all Safari (Desktop & iOS), not for Chrome
+    position: sticky;
+    top: 0;
+    z-index: 1; // any positive value, layer order is global
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    max-height: 500px;
+    overflow: auto;
+    margin-top: 12px;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+/*
+    Table style configurations ends here
+*/
+
+/*
+    svg styles goes here
+*/
+
+svg {
+    cursor: pointer;
+}
+
+/*
+    scg styles ends here
+*/
+
+/*
+    input styles goes here
+*/
+
+.searchBox{border: 1px solid #888 !important; display: inline-block; padding: 10px !important;  font-size: 13px; border: none; width: 150px;  border-radius: 3px; height: 40px; font-size: 13px;  margin-left: 5px;}
+.searchBox::placeholder{color: #000;}
+.buttons-box{float:right; display: inline-block;} 
+
+
+// input[type=text] {
+//     width: 10%;
+//     padding: 6px 10px;
+//     margin-left: 5px;
+//     display: inline-block;
+//     border: 1px solid #ccc;
+//     border-radius: 4px;
+//     box-sizing: border-box;
+//     font-size: 1rem;
+//     line-height: 1.6;
+// }
+
+.select-cols {
+    width:150px;
+    height: 40px;
+    margin-bottom: 4.5px;
+    padding: 5px;
+    display: inline-block;
+    border: none;
+    border: 1px solid #888 !important;
+    border-radius: 3px;
+    font-size: 13px;
+    margin-right: 5px;
+
+}
+
+.select-actions {
+    width:150px;
+    height: 40px;
+    margin-right: 5px;
+    display: inline-block;
+   
+    font-size: 13px;
+    border: 1px solid #888 !important;
+    border: none;
+    border-radius: 3px;
+}
+
+.select-columns {
+    width:150px;
+    margin-right: 5px;
+    display: inline-block;
+    border: 1px solid #888;
+    border-radius: 3px;
+}
+.select-columns .btn-block{background-color: #eee !important;}
+
+.download-icon {
+    height: 39px;
+
+    background-color: #003366;
+    border-radius: 3px;
+    padding: 4px 12px;
+    font-size: 13px;
+    margin-top: -3px;
+}
+
+.download-icon svg{width: 13px; margin-top: -2px;}
+
+.columnSelector {
+    margin-top: 5px;
+}
+
+/* 
+    input styles ends here
+*/
+
+/* 
+    pagination style goes here
+*/
+caption {
+    width: 150px;
+    padding: 13px 5px;
+    margin-top: 10px;
+}
+
+nav {
+    margin-top: 5px;
+    float: right;
+}
+
+.select-nav {
+    height: 37.5px;
+}
+
+.totalItems {
+    float: right;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-item {
+    cursor: pointer;
+}
+
+/* 
+  pagination style goes here
+*/
+
+#searchByLedger{
+    margin-left: 5px;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 481.99px) { 
+    .select-cols{display: block; width: 100%; margin-bottom: 5px;} 
+    .searchBox{width: 100%; display: block; margin-bottom: 5px; margin-left: 0px;}  
+    .select-columns {width: 100%; display: block; margin-bottom: 5px; }
+    .select-actions{width: 100%; display: block; margin-bottom: 5px;    }
+    .buttons-box{width: 100%;}
+    .download-icon{width: 100%;}
+
+ }
+
+
+
+ @media (min-width: 481px) and (max-width: 767.99px) { 
+    .select-cols{display: block; width: 100%; margin-bottom: 5px;} 
+    .searchBox{width: 100%; display: block; margin-bottom: 5px; margin-left: 0px;}  
+    .select-columns {width: 100%; display: block; margin-bottom: 5px; }
+    .select-actions{width: 100%; display: block; margin-bottom: 5px; }
+    .buttons-box{width: 100%;}
+    .download-icon{width: 100%;}
+    nav{float: left;}
+ }
+
+
+ @media (min-width: 768px) and (max-width: 991.99px) { 
+    .select-cols{display: block; width: 100%; margin-bottom: 5px;} 
+    .searchBox{width: 100%; display: block; margin-bottom: 5px; margin-left: 0px;}  
+    .select-columns {width: 100%; display: block; margin-bottom: 5px; }
+    .select-actions{width: 100%; display: block; margin-bottom: 5px; }
+    .buttons-box{width: 100%;}
+    .download-icon{width: 100%;}
+    nav{float: left;}
+ }
+
+ @media (min-width: 992px) and (max-width: 1199.99px) { 
+    .select-actions{margin-right: 3px; margin-bottom: 3px;}
+    .select-columns{margin-right: 4px;}
+    .select-cols{margin-right: 4px;} 
+ }
+
+
+
+

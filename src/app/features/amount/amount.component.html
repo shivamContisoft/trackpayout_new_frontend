@@ -1,0 +1,372 @@
+<div class=" col-md-12 col-xl-12 chart background">
+        
+    <div class="col-sm-12">
+        <div class="card-head">
+            <h2 class="card-head txt3">Amount of sales and Receipt in last days<i
+                    class="fa-solid fa-rotate-right"></i>
+            </h2>
+        </div>
+
+        <div class="dropdown txtdrop">
+            <button class=" primary-drop dropdown-toggle " type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-chart-simple"></i> &nbsp;Bar Chart
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            <!-- <button class=" primary-drop dropdown-toggle btn1" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Current Year &nbsp;
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Current Month</a></li>
+                <li><a class="dropdown-item" href="#">Last Month</a></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            <!-- </ul> -->
+            <!-- <button class=" primary-drop dropdown-toggle btn1" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Month Wise Amount Status &nbsp;
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Total Sales/Receipt/CreditNote</a></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Last Month</a></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            <!-- </ul> -->
+    </div>
+
+        <!-- <select class="select-cols"  style="margin-top: 36px; margin-left: 41px;" >
+            <option value="area">Line-Chart</option>
+            <option value="bar">Bar-Chart</option>
+        </select> -->
+
+        
+        <!-- <select class="select-cols" >
+            <option value="sales">Amount of sales and Receipt in last days</option>
+            <option value="lastmonth">Month wise sales details</option>
+            <option value="currentyear">Month wise amount status</option>
+            <option value="lastmonth">Top 10 Debtors</option>
+            <option value="currentmonth">Month wise sales v/s purchase</option>
+            
+        </select> -->
+
+        
+        <!-- <h5 class="txt"><b>Amount of sales and Receipt in last days</b></h5> -->
+        <br>
+       
+    </div>
+    
+    <div id="chart1">
+        <apx-chart [series]="chartOptions1.series" [chart]="chartOptions1.chart"
+            [dataLabels]="chartOptions1.dataLabels" [plotOptions]="chartOptions1.plotOptions"
+            [yaxis]="chartOptions1.yaxis" [legend]="chartOptions1.legend" [fill]="chartOptions1.fill"
+            [stroke]="chartOptions1.stroke" [tooltip]="chartOptions1.tooltip"
+            [xaxis]="chartOptions1.xaxis"></apx-chart>
+    </div>
+
+   <div class="info">
+        <!-- <div class="heading1">
+            <div class="heading2">
+                <h2>
+                    <span class="line">Last Sale And Purchase Data</span>
+                </h2>
+            </div>
+        </div> -->
+        <table class="table-responsive col-xl-12" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th style="width: 50px;font-size: smaller;">Days</th>
+                    <th style="text-align: center;">1-30</th>
+                    <th scope="col" style="text-align: center;">31-60</th>
+                    <th scope="col" style="text-align: center;">61-90</th>
+                    <th scope="col" style="text-align: center;">90+</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th  style="width: 60px;">Sales</th>
+                    
+                    <td>80</td>
+                    <td>2270</td>
+                    <td>30</td>
+                    <td>200</td>
+                    
+                </tr>
+                <tr>
+                    <th style="width: 60px;">Receipt</th>
+                   
+                    <td>425</td>
+                    <td>20</td>
+                    <td>40</td>
+                    <td>10</td>
+                    
+                </tr>
+                
+            </tbody>
+        </table>
+<!-- 
+        <div class="table-responsive table-scroll">
+            <table class="table">
+                <tr>
+                    <th><input type="checkbox" class="check"></th>
+                    <th>Days</th>
+                    <th>1-30</th>
+                    <th>31-60</th>
+                    <th>61-90</th>
+                    <th>90+</th>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>Sales Amount in ( ₹ )</td>
+                    <td></td>
+                    <td>120.00</td>
+                    <td>32.00 K Dr</td>
+                    <td>31.88 k</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>Receipt Amount in ( ₹ )</td>
+                    <td>ishan_trailer</td>
+                    <td>120.00</td>
+                    <td>32.00 K Dr</td>
+                    <td>31.88 k</td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>3</td>
+                    <td>ishan_trailer</td>
+                    <td>120.00</td>
+                    <td>32.00 K Dr</td>
+                    <td>31.88 k</td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>4</td>
+                    <td>ishan_trailer</td>
+                    <td>120.00</td>
+                    <td>32.00 K Dr</td>
+                    <td>31.88 k</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>5</td>
+                    <td>ishan_trailer</td>
+                    <td>120.00</td>
+                    <td>32.00 K Dr</td>
+                    <td>31.88 k</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" class="check"></td>
+                    <td>6</td>
+                    <td>ishan_trailer</td>
+                    <td>120.00</td>
+                    <td>32.00 K Dr</td>
+                    <td>31.88 k</td>
+                </tr>
+
+
+
+                
+            </table>
+        </div> -->
+    </div>
+</div>
+
+
+<div class=" col-md-12 col-xl-12 chart background">
+        
+    <div class="col-sm-12">
+        <div class="card-head">
+            <h2 class="card-head txt3">Top 10 Debtors<i
+                    class="fa-solid fa-rotate-right"></i>
+            </h2>
+        </div>
+
+        <div class="dropdown txtdrop">
+            <button class=" primary-drop dropdown-toggle " type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-chart-simple"></i> &nbsp;Bar Chart
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        
+        </div>
+       
+</div>
+    
+    <div id="chart1">
+        <apx-chart [series]="chartOptions2.series" [chart]="chartOptions2.chart"
+            [dataLabels]="chartOptions2.dataLabels" [plotOptions]="chartOptions2.plotOptions"
+            [yaxis]="chartOptions2.yaxis" [legend]="chartOptions2.legend" [fill]="chartOptions2.fill"
+            [stroke]="chartOptions2.stroke" [tooltip]="chartOptions2.tooltip"
+            [xaxis]="chartOptions2.xaxis"></apx-chart>
+    </div>
+
+   <div class="info">
+        <!-- <div class="heading1">
+            <div class="heading2">
+                <h2>
+                    <span class="line">Last Sale And Purchase Data</span>
+                </h2>
+            </div>
+        </div> -->
+        <table class="table-responsive col-xl-12">
+            <thead>
+                <tr>
+                    <th style="width: 50px;font-size: smaller;">#</th>
+                    <th>Bajaj Debetors</th>
+                    <th scope="col" style="width: 97px;">Contisoft(Debtors)</th>
+                    <th scope="col" style="width: 97px;">A4</th>
+                    <th scope="col" style="width: 97px;">Customer X17</th>
+                    <th scope="col" style="width: 97px;">Anant Khande</th>
+                    <th scope="col" style="width: 97px;">Creative New</th>
+                    <th scope="col" style="width: 97px;">Customer Harish II</th>
+                    <th scope="col" style="width: 97px;">Kirti Debtors</th>
+                    <th scope="col" style="width: 97px;">Haldiram</th>
+                    <th scope="col" style="width: 97px;">Arun Kumaar Singh</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th  style="width: 60px;">Sales</th>
+                    <td>8000</td>
+                    <td>2270</td>
+                    <td>0</td>
+                    <td>2250</td>
+                    <td>19</td>
+                    <td>399</td>
+                    <td>5000</td>
+                    <td>7633</td>
+                    <td>367</td>
+                    <td>456</td>
+                    
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class=" col-md-12 col-xl-12 chart background">
+        
+        <div class="col-sm-12">
+            <div class="card-head">
+                <h2 class="card-head txt3">Month wise sales details<i
+                        class="fa-solid fa-rotate-right"></i>
+                </h2>
+            </div>
+    
+            <div class="dropdown txtdrop">
+                <button class=" primary-drop dropdown-toggle " type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-chart-simple"></i> &nbsp;Bar Chart
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                <button class=" primary-drop dropdown-toggle btn1" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Month wise sales details &nbsp;
+                <i class="fa-solid fa-angle-down"></i>
+                
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Month wise amount status</a></li>
+                    <li><a class="dropdown-item" href="#">Month wise sales v/s purchase</a></li>
+                    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+            
+            </div>
+
+           
+            
+            <!-- <select class="select-cols" > -->
+                <!-- <option value="sales">Amount of sales and Receipt in last days</option> -->
+                <!-- <option value="monthsale">Month wise sales details</option>
+                <option value="amountsale">Month wise amount status</option> -->
+                <!-- <option value="lastmonth">Top 10 Debtors</option> -->
+                <!-- <option value="purchase">Month wise sales v/s purchase</option>
+                
+            </select> -->
+
+            
+            <!-- <h5 class="txt"><b>Month Wise Amount Status</b></h5> -->
+            <br>
+           
+        </div>
+        
+        <div id="chart1">
+            <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart"
+                [dataLabels]="chartOptions.dataLabels" [plotOptions]="chartOptions.plotOptions"
+                [yaxis]="chartOptions.yaxis" [legend]="chartOptions.legend" [fill]="chartOptions.fill"
+                [stroke]="chartOptions.stroke" [tooltip]="chartOptions.tooltip"
+                [xaxis]="chartOptions.xaxis"></apx-chart>
+        </div>
+
+       <div class="info">
+            <!-- <div class="heading1">
+                <div class="heading2">
+                    <h2>
+                        <span class="line">Last Sale And Purchase Data</span>
+                    </h2>
+                </div>
+            </div> -->
+            <table class="table-responsive col-xl-12">
+                <thead>
+                    <tr>
+                        <th style="width: 50px;font-size: smaller;">Month</th>
+                        <th>Apr</th>
+                        <th scope="col" style="width: 97px;">May</th>
+                        <th scope="col" style="width: 97px;">Jun</th>
+                        <th scope="col" style="width: 97px;">Jul</th>
+                        <th scope="col" style="width: 97px;">Aug</th>
+                        <th scope="col" style="width: 97px;">Sep</th>
+                        <th scope="col" style="width: 97px;">Oct</th>
+                        <th scope="col" style="width: 97px;">Nov</th>
+                        <th scope="col" style="width: 97px;">Dec</th>
+                        <th scope="col" style="width: 97px;">Jan</th>
+                        <th scope="col" style="width: 97px;">Feb</th>
+                        <th scope="col" style="width: 97px;">Mar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th  style="width: 60px;">Amount</th>
+                        <td>8000</td>
+                        <td>2270</td>
+                        <td>0</td>
+                        <td>2250</td>
+                        <td>19</td>
+                        <td>399</td>
+                        <td>5000</td>
+                        <td>7633</td>
+                        <td>367</td>
+                        <td>456</td>
+                        <td>234</td>
+                        <td>897</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>

@@ -22,6 +22,7 @@ body{
     --light-red-color:#FB899E;
     --white-color:#fff;
     --light-green-color:#3E9F1C; 
+    --font-size: 12px;
 }
 
 
@@ -145,12 +146,20 @@ border: none !important;
     background: #555; 
   }
 
-    
-
-
 
 }
     
-    
+   
+label {
+    font-size: 12px;
+}
 
+
+li {
+    font-size: var(--font-size);
+}
+
+input {
+    font-size: var(--font-size);
+}
 

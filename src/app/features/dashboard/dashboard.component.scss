@@ -206,9 +206,53 @@ h3{font-size: 14px; color: var(--black-color); font-weight: 600; margin: 0;}
 }
 
 
+#statistics {
+    border-radius: 120px;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
 
 
+  .card1{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    /* padding-right: calc(var(--bs-gutter-x) * .5); */
+    /* padding-left: calc(var(--bs-gutter-x) * .5); */
+    margin-top: var(--bs-gutter-y);
+  }
 
 
+  .kpitxt {
+    font-size: 14px;
+  }
 
+.title {
+    font-size: 12px;
+}
 

@@ -1,0 +1,206 @@
+
+<div class="graph-card">
+
+    <div class="card-head">
+        <h2 class="card-head">Sales Executive<i
+                class="fa-solid fa-rotate-right"></i>
+        </h2>
+    </div>
+    <div class="clearfix"></div>
+    <div class="create mt-4 mb-4">
+        <button class="primary-drop" type="button" aria-expanded="false" (click)="openModel()" data-bs-toggle="modal" data-bs-target="#myModal">
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>&nbsp; Add Sales Executive
+        </button>
+    </div>
+    <div class="card-head1 space">
+
+        <div class="btnspace mb-2">   
+            <!-- <input class="from-control" type = "date" placeholder="From date">   -->
+            <input type="date" class="form-control form-input search" placeholder="">
+        </div>
+        <div class="btnspace mb-2">   
+            <!-- <input class="from-control" type = "date" placeholder="To date">   -->
+            <input type="date" class="form-control form-input search" placeholder="">
+        </div>
+        <button class="primary-drop dropdown-toggle mb-2 btnspace" type="button"
+            aria-expanded="false">
+            &nbsp; Submit
+        </button>
+        <button class="primary-drop dropdown-toggle mb-2" type="button"
+            aria-expanded="false">
+            &nbsp; Reset
+        </button>
+    </div>
+
+    <div class="card-head1 space">
+        <div class="col-md-6 btns">
+
+        <button class="btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp;Search in All
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+        <input type="text" class="form-control form-input search btnspace" placeholder="Search Here">
+
+        <!-- <button class=" btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp; Search here
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul> -->
+    </div>
+
+    <!-- <div class="card-head1"> -->
+        <div class="col-md-6">
+
+            <button class=" btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp; Select an Action
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            <button class="primary-drop dropdown-toggle" type="button"
+                aria-expanded="false">
+                <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i>&nbsp; Download
+            </button>
+        </div>
+    </div>
+
+    
+    <div class="clearfix"></div>
+
+    <div class="table-responsive table-scroll">
+        <table class="table">
+            <tr class="txt">
+                <!-- <th><input type="checkbox" class="check "></th> -->
+                <th>S.no</th>
+                <th>Name</th>
+
+                <th>Email ID</th>
+                <th>Mobile No.</th>
+                <th>Total No. of Leads</th>
+
+                <th>Total No. of Qualified Leads </th>
+                <th>Qualified Lead Value</th>
+                <th>Revenue Value </th>
+                
+            </tr>
+
+           
+        </table>
+    </div>
+<div>
+
+    <!-- <button class="primary-drop" type="button" aria-expanded="false">
+        Back to Dashboard
+    </button> -->
+    <div class="divide">
+
+        <button class="primary-drop " type="button" aria-expanded="false">
+            Back to Dashboard
+        </button>
+        <div class="pagination mt-2">
+        
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl" style="width: 1150;">
+        <div class="modal-content">
+            <div class="modal-head headings">
+                        <h4 class="modal-title">Sales Executive</h4>
+                        <button type="button" class="close btnclose" (click)="closeModel()" data-bs-dismiss="modal">&times;</button> 
+                        <!-- <span class="field">'*' mark Fields are Mandatory</span> -->
+            </div>
+                    <div class="modal-body">
+                        <form>
+                    
+                            <div class="row">
+                                <div class="col-md-4 mb-2">
+                                    <label>Name of Sales Executive</label>
+                                    <input type="text" class="form-control" placeholder="Sales Executive" name="name">
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Email ID" name="email">
+                                </div>
+                                
+                                <div class="col-md-4 mb-2">
+                                    <label for="Mobile Number">Mobile Number</label>
+                                    <input type="text" class="form-control" placeholder="" required>
+                                </div>
+                                
+                                <div class="col-md-3 mb-3 mt-3">
+                                    <button type="button" class="btn btn-primary toggle-btn" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">Set Target</button>
+                                </div>
+
+                                <!-- <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                  Create new company with these details 
+                                </label>       -->
+                    </div>
+
+                    <div class="table-responsive table-scroll">
+                        <table class="table">
+                            <tr class="txt">
+                                <!-- <th><input type="checkbox" class="check "></th> -->
+                                <th>S.no</th>
+                                <th>Date</th>
+                
+                                <th>Target</th>
+                                <th>Min. Eligibility</th>
+                                <th>Actions</th>
+                
+                                <!-- <th>Total No. of Qualified Leads </th>
+                                <th>Qualified Lead Value</th>
+                                <th>Revenue Value </th> -->
+                                
+                            </tr>
+                
+                           
+                        </table>
+                    </div>
+                
+
+                            
+                            <!-- <button class="btn btn-primary disabled" type="submit">Save</button> -->
+                           
+            </form>
+        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" (click)="closeModel()" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btnspace btn-primary disabled" (click)="closeModel()" data-bs-dismiss="modal">Submit</button>
+                    </div>
+                   
+                  
+                  </div>
+              
+                </div>
+</div>
+

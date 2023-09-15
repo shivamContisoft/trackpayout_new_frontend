@@ -11,24 +11,24 @@ export class SidebarComponent {
       menuSidebar=[
         {
         link_name: "Dashboard",
-        link: "/dashboard",
+        link: "/features/dashboard/standard",
         icon: "fa-solid fa-border-all",
         sub_menu: [
           {
             link_name: "Standard",
-            link: "/html-n-css",
+            link: "/features/dashboard/standard",
           }, 
           {
             link_name: "By Amount",
-            link: "/html-n-css",
+            link: "/features/dashboard/amount",
           }, 
           {
             link_name: "By Ledger",
-            link: "/html-n-css",
+            link: "/features/dashboard/ledger",
           }, 
           {
             link_name: "By Stock item",
-            link: "/html-n-css",
+            link: "/features/dashboard/stock-item",
           },
           {
             link_name: "Monthly Report",
@@ -40,20 +40,9 @@ export class SidebarComponent {
       
       {
         link_name: "Stock Summary",
-        link: null,
+        link: "/features/stock-summary",
         icon: "fa-solid fa-file-invoice",
-        sub_menu: [
-          {
-            link_name: "HTML & CSS",
-            link: "/html-n-css",
-          }, {
-            link_name: "JavaScript",
-            link: "/javascript",
-          }, {
-            link_name: "PHP & MySQL",
-            link: "/php-n-mysql",
-          }
-        ]
+        sub_menu: []
       }, 
       
       
@@ -66,54 +55,58 @@ export class SidebarComponent {
           
           {
             link_name: "Group Oustanding",
-            link: "/posts/web-design",
-          }, {
-            link_name: "Post Dated Report",
-            link: "/posts/login-form",
-          }, {
+            link: "/features/reports/groups",
+          }, 
+          {
             link_name: "Sales Registor",
-            link: "/posts/card-design",
+            link: "/features/reports/sale",
           },
           {
             link_name: "Receipt Registor",
-            link: "/html-n-css",
+            link: "/features/reports/receipt",
           }, 
           {
             link_name: "Credit Note Registor",
-            link: "/html-n-css",
+            link: "/features/reports/creditnote",
           }, 
           {
             link_name: "Purchase Registor",
-            link: "/html-n-css",
+            link: "/features/reports/purchase",
           }, 
           {
             link_name: "Payment Registor",
-            link: "/html-n-css",
+            link: "/features/reports/payment",
           }, 
           {
             link_name: "Debit Note Registor",
-            link: "/html-n-css",
+            link: "/features/reports/debitnote",
           }, 
           {
             link_name: "Journal Registor",
-            link: "/html-n-css",
+            link: "/features/reports/journal",
           }, 
         ]
       },
        {
         link_name: "By Due Days",
-        link: "/analytics",
+        link: "/byduedays",
         icon: "fa-solid fa-calendar-days",
         sub_menu: [
           {
             link_name: "Sundry Debtor",
-            link: "/html-n-css",
+            link: "/features/reports/byduedays/sundrydebtor",
           }, 
           {
             link_name: "Sundry Creditor",
-            link: "/html-n-css",
+            link: "/features/reports/byduedays/sundrycreditor",
           }, 
         ]
+      }, 
+      {
+        link_name: "Bill report",
+        link: "/features/reports/bill",
+        icon: "fa-solid fa-calendar-days",
+        sub_menu: []
       }, 
       {
         link_name: "Ledger Statement",
@@ -122,47 +115,42 @@ export class SidebarComponent {
         sub_menu: [
           {
             link_name: "Sundry Debtor",
-            link: "/html-n-css",
+            link: "/features/reports/ledger-statement/sundrydebtor",
           }, 
           {
             link_name: "Sundry Creditor",
-            link: "/html-n-css",
+            link: "/features/reports/ledger-statement/sundrycreditor",
           }, 
         ]
       },
        {
         link_name: "Ageing Report",
-        link: null,
+        link: "/features/ageing",
         icon: "fa-solid fa-file-lines",
-        sub_menu: [
-          {
-            link_name: "UI Face",
-            link: "/ui-face",
-          }, {
-            link_name: "Pigments",
-            link: "/pigments",
-          }, {
-            link_name: "Box Icons",
-            link: "/box-icons",
-          }
-        ]
+        sub_menu: []
+      },
+      {
+        link_name: "Follow Up",
+        link: "/features/followup",
+        icon: "fa-solid fa-calendar-days",
+        sub_menu: []
       },
       
        {
         link_name: "Client Performance",
-        link: "/history",
+        link: "/features/client",
         icon: "fa-solid fa-chart-line",
         sub_menu: []
       },
        {
         link_name: "Task",
-        link: "/setting",
+        link: "/features/task",
         icon: "fa-solid fa-clock",
         sub_menu: []
       }  , 
       {
         link_name: "Bill Discount",
-        link: "/setting",
+        link: "/features/bill-discount",
         icon: "fa-solid fa-percent",
         sub_menu: []
       },
@@ -173,37 +161,58 @@ export class SidebarComponent {
         sub_menu: [
           {
             link_name: "MSME",
-            link: "/html-n-css",
+            link: "/features/statutory/msme",
           }, 
           {
             link_name: "GST",
-            link: "/html-n-css",
+            link: "/features/statutory/gst",
           }, 
         ]
       }, 
       
       {
         link_name: "CRM",
-        link: "/setting",
+        link: "/features/crm/dashboard",
         icon: "fa-solid fa-user",
         sub_menu: [
           {
+            link_name: "Dashboard",
+            link: "/features/crm/dashboard",
+          }, 
+          {
             link_name: "Sales Executive",
-            link: "/html-n-css",
+            link: "/features/crm/sales-executive",
           }, 
           {
             link_name: "Leads",
-            link: "/html-n-css",
+            link: "/features/crm/leads",
           }, 
           {
             link_name: "Quotations",
-            link: "/html-n-css",
+            link: "/features/crm/quotation",
+          }, 
+          {
+            link_name: "Reports",
+            link: "/features/crm/reports/lead-report",
+            icon: "fa-solid fa-calendar-days",
+            sub_menu: [
+              {
+
+                link_name: "Lead Report",
+                link: "/features/crm/reports/lead-report",
+              },
+              {
+
+                link_name: "Sales Executive Analyses",
+                link: "/features/crm/reports/sale-report",
+              }
+            ]
           }, 
         ]
       },
        {
         link_name: "Legal Support",
-        link: "/setting",
+        link: "/features/legal-support",
         icon: "fa-solid fa-circle-question",
         sub_menu: []
       },
@@ -215,15 +224,15 @@ export class SidebarComponent {
         sub_menu: [
           {
             link_name: "Dashboard",
-            link: "/html-n-css",
+            link: "/features/contisoftpannel/dashboard",
           }, 
           {
             link_name: "Subscriptions",
-            link: "/html-n-css",
+            link: "/features/contisoftpannel/subscriptions",
           }, 
           {
             link_name: "Companies",
-            link: "/html-n-css",
+            link: "/features/contisoftpannel/companies",
           }, 
         ]
       },
@@ -235,27 +244,27 @@ export class SidebarComponent {
         sub_menu: [
           {
             link_name: "User",
-            link: "/html-n-css",
+            link: "/features/administrator/user",
           }, 
           {
             link_name: "Ledger",
-            link: "/html-n-css",
+            link: "/features/administrator/ledger",
           }, 
           {
             link_name: "OnBoard Masters",
-            link: "/html-n-css",
+            link: "/features/administrator/onboard-masters",
           }, 
           {
             link_name: "Bank Details",
-            link: "/html-n-css",
+            link: "/features/administrator/bank-details",
           },
           {
             link_name: "Company",
-            link: "/html-n-css",
+            link: "/features/administrator/company",
           },  
           {
             link_name: "General Configuration",
-            link: "/html-n-css",
+            link: "/features/administrator/general-config",
           }, 
         ]
       },
@@ -267,11 +276,11 @@ export class SidebarComponent {
         sub_menu: [
           {
             link_name: "Customer Statement",
-            link: "/html-n-css",
+            link: "/features/banking/customer-statement",
           }, 
           {
             link_name: "DP Power Calculator",
-            link: "/html-n-css",
+            link: "/features/banking/dpcalculator",
           }, 
         ]
       },
@@ -283,10 +292,10 @@ export class SidebarComponent {
           sub_menu: [
             {
               link_name: "Logs",
-              link: "/html-n-css",
+              link: "/features/log/log",
             },   {
               link_name: "Logs by user",
-              link: "/html-n-css",
+              link: "/features/log/logbyuser",
             }
           ]
         },

@@ -1,0 +1,225 @@
+<div class="graph-card">
+
+        <div class="card-head">
+            <h2 class="card-head">Subscription<i
+                    class="fa-solid fa-rotate-right"></i>
+            </h2> 
+        </div>
+        <div class="clearfix"></div>
+        <div class="create mt-2">
+            <button class="primary-drop" type="button" aria-expanded="false" (click)="openModel()" data-bs-toggle="modal" data-bs-target="#myModal">
+                <i class="fa-solid fa-plus" style="color: #ffffff;"></i>&nbsp; Add Customer
+            </button>
+        </div>
+        <div class="clearfix"></div>
+        <div class="card-head1">
+                <input type="text" class="form-control form-input search" placeholder="Search customers...">
+                <button class="primary-drop dropdown-toggle" type="button"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i>&nbsp; Download
+                </button>
+        </div>
+
+    
+    <div class="clearfix"></div>
+
+    <div class="table-responsive table-scroll">
+        <table class="table">
+            <tr class="txt">
+                <!-- <th><input type="checkbox" class="check "></th> -->
+                <th>#</th>
+                <th>Company Name</th>
+                <th>Executive type</th>
+                <th>Integration type</th>
+                <th>Subscription Start</th>
+                <th>Subscription end</th>
+                <th>Remaining days</th>
+                <th>created days</th>
+                <th>updated days</th>
+                <th>PAN Number</th>
+                <th>GST Number</th>
+                <th>Subscription Fee</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="pagination">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+    </div>
+
+
+    <!-- Modal -->
+    <!-- <div class="row"> -->
+        <!-- <div class="col-lg-12"> -->
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl" style="width: 1150;">
+        <div class="modal-content">
+            <div class="modal-head headings">
+                        <h4 class="modal-title">Add Customer</h4>
+                        <button type="button" class="close btnclose" (click)="closeModel()" data-bs-dismiss="modal">&times;</button> 
+                        <span class="field">'*' mark Fields are Mandatory</span>
+            </div>
+                    <div class="modal-body">
+                        <form>
+                    
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <label>Subscription ID</label>
+                                    <input type="text" class="form-control" placeholder="" name="id">
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label>Company Name</label>
+                                    <input type="text" class="form-control" placeholder="Company Name" name="name">
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label for="Company Category">Company Category</label>
+                                        <select class="form-select mb-2">
+                                            <option>Select Company Category</option>
+                                            <option value="micro">Agriculture</option>
+                                            <option value="small">Arts and Entertainment</option>
+                                            <option value="micro">Agriculture</option>
+                                            <option value="small">Arts and Entertainment</option>
+                                            <option value="micro">Agriculture</option>
+                                            <option value="small">Arts and Entertainment</option>
+                                        </select>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label for="Company Integration Type">Company Integration Type</label>
+                                    <select class="form-select mb-2" >
+                                        <option>Select Integration Type</option>
+                                        <option value="micro">Tally</option>
+                                        <option value="small">Zoho</option>
+                                        <option value="micro">Manual</option>
+                                        <option value="small">Tally ERP</option>
+                                        <option value="micro">Agriculture</option>
+                                        <option value="small">Arts and Entertainment</option>
+                                    </select> 
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label for="Executive name">Executive name</label>
+                                    <select class="form-select mb-2" >
+                                        <option>Select Executive</option>
+                                        <option value="micro">None</option>
+                                        <option value="small">Kajal</option>
+                                        <option value="micro">Rohit</option>
+                                        <option value="small">Kajal</option>
+                                        <option value="micro">Rohit</option>
+                                    </select> 
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="First Name">First Name</label>
+                                    <input type="text" class="form-control" placeholder="First Name" required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="last Name">last Name</label>
+                                    <input type="text" class="form-control" placeholder="Last Name" required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="Company Address">Company Address</label>
+                                    <input type="text" class="form-control" placeholder="Company Address" required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="Designation">Designation</label>
+                                    <input type="text" class="form-control" placeholder="Designation" required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="Company Email">Company Email</label>
+                                    <input type="text" class="form-control" placeholder="Company Email" required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="Company Contact">Company Contact</label>
+                                    <input type="text" class="form-control" placeholder="Company Contact" required>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="Subscription Start Date">Subscription Start Date</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="Subscription Start Date">Subscription Start Date</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="Subscription Start Date">Subscription Start Date</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="Subscription Start Date">Subscription Start Date</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="Pan number">PAN Number</label>
+                                    <input type="text" class="form-control"  required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="gst number">GST Number</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label for="Company status">Company status</label>
+                                        <select class="form-select mb-2" >
+                                            <option >Select Company Status</option>
+                                            <option value="micro">Active</option>
+                                            <option value="small">Inactive</option>
+                                        </select>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label for="Mail Status">Mail Status</label>
+                                    <select class="form-select mb-2" >
+                                            <option >Select Mail Status</option>
+                                            <option value="micro">Active</option>
+                                            <option value="small">Inactive</option>
+                                    </select> 
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label for="Whatsapp Status">Whatsapp Status</label>
+                                    <select class="form-select mb-2" >
+                                            <option >Select Whatsapp Status</option>
+                                            <option value="micro">Active</option>
+                                            <option value="small">Inactive</option>
+                                    </select> 
+                                </div>
+                              
+                                <div class="form-check checkbtn">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Create new company with these details 
+                                    </label>
+                                    <div class="invalid-feedback">
+                                      You must agree before submitting.
+                                    </div>
+                                  </div>
+                                <!-- <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                  Create new company with these details 
+                                </label>       -->
+                    </div>
+                            
+                            <!-- <button class="btn btn-primary disabled" type="submit">Save</button> -->
+                           
+            </form>
+        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" (click)="closeModel()" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btnspace btn-primary disabled" (click)="closeModel()" data-bs-dismiss="modal">Submit</button>
+                    </div>
+                   
+                  
+                  </div>
+              
+                </div>
+</div>
+        <!-- </div> -->
+
+    <!-- </div> -->
+</div>
+

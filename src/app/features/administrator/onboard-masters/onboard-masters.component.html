@@ -1,0 +1,142 @@
+<div class="graph-card">
+
+    <div class="card-head">
+        <h2 class="card-head">OnBoard Creditors / Debtors<i
+                class="fa-solid fa-rotate-right"></i>
+        </h2> 
+    </div>
+    <div class="clearfix"></div>
+    <div class="create mt-2 mb-4 btnnav">
+        <button class="primary-drop" type="button" aria-expanded="false" (click)="openModel()" data-bs-toggle="modal" data-bs-target="#myModal">
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>&nbsp; Add Creditors
+        </button>
+      
+        <ul class="nav nav-pills" id="myTab" role="tablist">
+               <li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="true">Creditors</a></li>
+               <li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Debtors</a></li>
+               
+        </ul>
+      
+    </div>
+    <div class="clearfix"></div>
+    <div class="card-head1">
+            <input type="text" class="form-control form-input search" placeholder="Search Here">
+            <button class="btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp;Search in All
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Search in All</a></li>
+            <li><a class="dropdown-item" href="#">First Name</a></li>
+            <li><a class="dropdown-item" href="#">Last Name</a></li>
+            <li><a class="dropdown-item" href="#">Designation</a></li>
+            <li><a class="dropdown-item" href="#">Created At</a></li>
+            <li><a class="dropdown-item" href="#">Email</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+        </ul>
+        <button class=" btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Select an Action
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">View</a></li>
+            <li><a class="dropdown-item" href="#">Download File</a></li>
+            
+        </ul>
+        <!-- <button class=" btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp; Search here
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul> -->
+        <button class="primary-drop dropdown-toggle" type="button"
+            aria-expanded="false">
+            <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i>&nbsp; Download
+        </button>
+    </div>
+
+
+<div class="clearfix"></div>
+
+<div class="table-responsive table-scroll">
+    <table class="table">
+        <tr class="txt">
+            <!-- <th><input type="checkbox" class="check "></th> -->
+            <th>#</th>
+            <th>name</th>
+            <th>Email Address</th>
+            <th>Group Type</th>
+            <th>Request date</th>
+            <th>Expiry date</th>
+            <th>Status</th>
+            <th>Tally Status</th>
+
+            
+        </tr>
+    </table>
+</div>
+
+<div class="pagination">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+</div>
+
+
+<!-- Modal -->
+<!-- <div class="row"> -->
+    <!-- <div class="col-lg-12"> -->
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" style="width: 1150;">
+              <div class="modal-content">
+                <div class="modal-head headings">
+                    <h4 class="modal-title">Add User</h4>
+                    <span class="field">'*' mark Fields are Mandatory</span>
+                    <button type="button" class="close btnclose" (click)="closeModel()" data-bs-dismiss="modal">&times;</button> 
+                </div>
+                <div class="modal-body">
+                    <form>
+                
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label for="Vender Name">Vender Name</label>
+                                <input type="text" class="form-control" placeholder="Vender Name" required>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="Email Address">Email Address</label>
+                                <input type="text" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            
+                            
+                </div>
+                        
+                        <!-- <button class="btn btn-primary disabled" type="submit">Save</button> -->
+                       
+        </form>
+    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btnspace btn-primary disabled" (click)="closeModel()" data-bs-dismiss="modal">Submit</button>
+                  <button type="button" class="btn btn-primary" (click)="closeModel()" data-bs-dismiss="modal">Close</button>
+                </div>
+               
+              
+              </div>
+          
+            </div>
+          </div>
+    <!-- </div> -->
+
+<!-- </div> -->
+</div>
+

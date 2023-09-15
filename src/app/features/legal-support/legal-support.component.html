@@ -1,0 +1,222 @@
+
+<div class="graph-card">
+
+    <div class="card-head">
+        <h2 class="card-head">Legal Support<i
+                class="fa-solid fa-rotate-right"></i>
+        </h2> 
+    </div>
+    <div class="clearfix"></div>
+    <div class="create mt-2">
+        <button class="primary-drop" type="button" aria-expanded="false" (click)="openModel()" data-bs-toggle="modal" data-bs-target="#myModal">
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>&nbsp; Create New Query
+        </button>
+    </div>
+    <!-- <div class="create">
+        <button class="primary-drop" type="button"
+            aria-expanded="false">
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>&nbsp; Create New Query
+        </button>
+    </div> -->
+    <div class="clearfix"></div>
+    <div class="card-head1">
+        <input type="text" class="form-control form-input search" placeholder="Search Here">
+        <button class="btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp;Search in All
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+        <button class=" btnspace primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> &nbsp; Search here
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+        <button class="primary-drop dropdown-toggle" type="button"
+            aria-expanded="false">
+            <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i>&nbsp; Download
+        </button>
+    </div>
+
+    
+    <div class="clearfix"></div>
+
+    <div class="table-responsive table-scroll">
+        <table class="table">
+            <tr class="txt">
+                <!-- <th><input type="checkbox" class="check "></th> -->
+                <th>S.no</th>
+                <th>Ticket Number</th>
+
+                <th>Ticket Date</th>
+                <th>Subject</th>
+                <th>Advocate Assigned</th>
+               
+            </tr>
+<!-- 
+            <tr>
+                <td><input type="checkbox" class="check"></td>
+                <td>1</td>
+                <td>Amul</td>
+                <td>120.00</td>
+                <td>120.00</td>
+                <td>120.00</td>
+                <td>120.00</td>
+               
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" class="check"></td>
+                <td>2</td>
+                <td>KUR</td>
+                <td>120.00</td>
+                <td>120.00</td>
+                <td>120.00</td>
+                <td>120.00</td>
+               
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" class="check"></td>
+                <td>3</td>
+                <td>Crystal</td>
+                <td>120.00</td>
+                <td>120.00</td>
+                <td>120.00</td>
+                <td>120.00</td>
+               
+            </tr> -->
+
+            <!-- <tr>
+                <td><input type="checkbox" class="check"></td>
+                <td>4</td>
+                <td>ishan_trailer</td>
+                <td>120.00</td>
+               
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" class="check"></td>
+                <td>5</td>
+                <td>ishan_trailer</td>
+                <td>120.00</td>
+               
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" class="check"></td>
+                <td>6</td>
+                <td>ishan_trailer</td>
+                <td>120.00</td>
+               
+            </tr> -->
+        </table>
+    </div>
+
+    <div class="pagination">
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+    </div>
+</div>
+
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl" style="width: 1150;">
+        <div class="modal-content">
+            <div class="modal-head headings">
+                        <h4 class="modal-title">Create Legal Query </h4>
+                        <button type="button" class="close btnclose" (click)="closeModel()" data-bs-dismiss="modal">&times;</button> 
+                        <span class="field">'*' mark Fields are Mandatory</span>
+            </div>
+                    <div class="modal-body">
+                        <form>
+                    
+                            <div class="row">
+                                
+                                <div class="col-md-6 mb-2">
+                                    <label for="Customer Name">Customer Name</label>
+                                    <select class="form-select mb-2">
+                                        <option>Select Customer</option>
+                                        <option value="micro">A4</option>
+                                        <option value="small">A67</option>
+                                        <option value="micro">Customer A</option>
+                                        <option value="micro">Customer B</option>
+
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="Invoice Number">Invoice Number</label>
+                                    <select class="form-select mb-2">
+                                        <option>Select Invoice Number</option>
+                                        
+
+                                    </select>
+                                </div>
+                        
+                                <div class="col-md-6 mb-2">
+                                    <label for="City">City</label>
+                                    <input type="text" class="form-control" placeholder="Customer City" required>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="Owners">Owners</label>
+                                    <input type="text" class="form-control" placeholder="Owner Details" required>
+                                </div>
+                                <div class="col-md-12 mb-2">
+                                    <label for="Subject">Subject</label>
+                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="col-md-12 mb-2">
+                                    <label for="Description">Description</label>
+                                    <textarea  class="form-control txtss" name="Description" id=""  rows="5" placeholder="Description"></textarea>
+                                </div>
+
+                                <div class="col-md-6 mb-2">
+                                    <label for="formFile" class="form-label">Attachment</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                
+                              
+                                <div class="form-check checkbtn">
+                                    <input class="form-check-input boxes" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        I accept all the terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                      You must agree before submitting.
+                                    </div>
+                                  </div>
+                                <!-- <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                  Create new company with these details 
+                                </label>       -->
+                    </div>
+                            
+                            <!-- <button class="btn btn-primary disabled" type="submit">Save</button> -->
+                           
+            </form>
+        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btnspace btn-primary disabled" (click)="closeModel()" data-bs-dismiss="modal">Submit</button>
+                        <button type="button" class="btn btn-primary" (click)="closeModel()" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                   
+                  
+                  </div>
+              
+                </div>
+</div>

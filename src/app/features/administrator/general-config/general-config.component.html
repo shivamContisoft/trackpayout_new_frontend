@@ -1,0 +1,209 @@
+<div class="graph-card">
+
+    <div class="card-head">
+        <h2 class="card-head">General Configurations<i
+                class="fa-solid fa-rotate-right"></i>
+        </h2> 
+    </div>
+    <div class="clearfix"></div>
+
+<div class="col-lg-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 headtext">
+                <h3>Bishir Enterprise UK</h3>
+            </div>
+            <div class="col-lg-12 paragraph">
+                <p class="para">manu@contisofttechno.com</p>
+                <small>Manage Your General Account Settings</small>
+            </div>
+
+            <div class="col-lg-12 headtext">
+                <h3>Company Logo Setting</h3>
+            </div>
+            <div class="col-lg-12 paragraph">
+                <p>Manage Your company logo</p>
+                <label for="formFile" class="form-label">Select Your company logo</label>
+                <input class="form-control" type="file" id="formFile">
+
+                <div class="btn-sub">
+                    <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Back</button>
+                    <button type="button" class="btn btnspace btn-primary disabled"  data-bs-dismiss="modal">Submit</button>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-12 headtext">
+                <h3>Reminder Financial Year Setting</h3>
+            </div>
+            <div class="col-lg-12 paragraph">
+                    <p>Manage Financial Years That Will Considered While Sending Reminders</p>
+                    <label for="Financial year">Select Financial Year</label>
+                    <select class="form-select" aria-label="multiple select example">
+                        <option selected>Select Financial Year</option>
+                        <option value="1">FY:- 2020-21</option>
+                        <option value="2">FY:- 2021-22</option>
+                        <option value="3">FY:- 2022-23</option>
+                    </select>
+
+                    <div class="btn-sub">
+                        <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Back</button>
+                        <button type="button" class="btn btnspace btn-primary disabled"  data-bs-dismiss="modal">Submit</button>
+                    </div>    
+            </div>
+            <div class="col-lg-12 headtext">
+                <h3>Email Configurations</h3>
+            </div>
+            <div class="paragraph">
+                    <!-- <p>Manage Financial Years That Will Considered While Sending Reminders</p> -->
+                    <form >
+                        <div class="row">
+
+                            <div class="col-md-2 mb-4">
+    
+                                <label for="Salutation">Salutation</label>
+                                <br>
+                                <textarea name="Salutation" id="" 
+                                placeholder="Dear Sir/Ma'am" cols="20" rows="3"></textarea>
+                            </div>
+                            <div class="col-md-6 mb-4">
+        
+                                <label for="Mail">Mail Line 1</label>
+                                <br>
+                                <textarea name="Mail" id="" 
+                                placeholder="We would like to draw your kind attention at our following bill for payment, details as under:-" cols="75" rows="3"></textarea>
+                            </div>
+                            <div class="col-md-4 mb-4">
+        
+                                <label for="Line">Mail Line 2</label>
+                                <br>
+                                <textarea name="Mail line 2" id="" 
+                                placeholder="You have an outstanding payment of Rs. 102000.00 /-" cols="50" rows="3"></textarea>
+                            </div>
+                       
+                        <div class="col-md-12 mb-4">
+                            <label for="Closing Line">Mail Closing Line</label>
+                                <br>
+                                <textarea name="Closing Line" id="" 
+                                placeholder="We shall be grateful, if you kindly look into the matter and take steps to expedite payment of these bills which are long overdue. In case of any difference in the above figures, Please inform us to enable us to make the necessary entries." cols="170" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-3 mb-2 mb-4">
+                            <label for="name"> Sender Name Under Regards </label><br>
+                            
+                            <input type="text" class="form-control" placeholder="Sender First Name" name="id">
+                        </div>
+                        <div class="col-md-3 mb-4 ">
+                            <label for="name">Show Order No./ Date </label><br>
+                            <input type="radio" name="yes" id="yes"> Yes
+                            <input type="radio" name="no" id="no"> No
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <label for="mail"> Mail From</label><br>
+                            
+                            <input type="text" class="form-control" placeholder="no-reply@trackpayout.com" name="id">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <label for="host"> Mail Host/Service</label><br>
+                            
+                            <input type="text" class="form-control" placeholder="Mail Host" name="id">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <label for="port"> Mail Port</label><br>
+                            
+                            <input type="text" class="form-control" placeholder="Mail Port" name="id">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <label for="username"> Mail Username</label><br>
+                            
+                            <input type="text" class="form-control" placeholder="Mail User-name" name="id">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <label for="mailcc"> Mail CC</label><br>
+                            
+                            <input type="text" class="form-control" placeholder="" name="id">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <label for="password"> Mail Password</label><br>
+                            
+                            <input type="password" class="form-control" placeholder="" name="id">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <label for="mailto"> Mail To</label><br>
+                            
+                            <input type="email" class="form-control" placeholder="" name="id">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <label for="Secure">Secure </label><br>
+                            <input type="radio" name="yes" id="yes" class="mr-2"> True
+                            <input type="radio" name="no" id="no"> False
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <label for="Secure">TLS </label><br>
+                            <input type="radio" name="yes" id="yes" class="mr-2"> True
+                            <input type="radio" name="no" id="no"> False
+                        </div>
+                        <div class="col-md-12 mb-4">
+                            <label for="Secure">Ledger Statement Duration </label><br>
+                            <input type="radio" name="Current" id="Current" class="mr-2"><span>Current Month</span> 
+                            <input type="radio" name="Last" id="Last" class="mr-2"> Last Month
+                            <input type="radio" name="two-month" id="two-month" class="mr-2"> Last 2 Month
+                            <input type="radio" name="three-month" id="three-month" class="mr-2"> Last 3 Month
+                            <input type="radio" name="six-month" id="six-month" class="mr-2"> Last 6 Month
+                            <input type="radio" name="year" id="year" class="mr-2"> 1 Year   
+                        </div>
+
+                    </div>
+    
+                    <div class="btn-sub">
+                            <button type="button" class="btn btnspace btn-primary"  data-bs-dismiss="modal">Back</button>
+                            <button type="button" class="btn btnspace btn-primary disabled"  data-bs-dismiss="modal">Check Email Config</button>
+                            <button type="button" class="btn btnspace btn-primary disabled"  data-bs-dismiss="modal">Submit</button>
+                        </div>    
+
+
+                    </form>
+                    
+            </div>
+            
+
+            <!-- <form>
+                <div class="row">
+
+                    <div class="col-md-6 mb-2">
+                        <label>Subscription ID</label>
+                        <input type="text" class="form-control" placeholder="" name="id">
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div> -->
+                <!-- <button type="submit" class="btn btn-primary">Submit</button>
+              </form> -->
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal -->
+<!-- <div class="row"> -->
+    <!-- <div class="col-lg-12"> -->
+
+
+    
+
+    
+</div>
+
+
+
+   
+    

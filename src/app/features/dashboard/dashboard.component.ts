@@ -1,4 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
+import * as ApexCharts from 'apexcharts';
+
 
 import {
   ApexAxisChartSeries,
@@ -47,10 +49,20 @@ export class DashboardComponent {
   compHead:string = 'Dashboard';
   main:string = 'Dashboard';
   sub:string = 'Standard';
+  cei: number;
+  chartvaluedata: number;
+  dsothisfin: any;
+  persentaheofriskaccount: number;
   
+  ngOnInit() {
+    
+    this.showdsopichart()
+
+  }
 
 
   constructor(){
+    
     this.chartOptions = {
       series: [
         {
@@ -335,9 +347,168 @@ this.chartOptions4 = {
 };
 
 
-
-
-   
   }
+  
+  showdsopichart(){
+    console.log("Chart function is loading ...");
+    
+    this.chartvaluedata=95
+    this.chartvaluedata=0;
+    this.dsothisfin=120
+    if(this.dsothisfin === undefined){
+       this.chartvaluedata=0
+    }else{
+      this.chartvaluedata=this.dsothisfin
+    }
+     
+     
+  // var options2 = {
+  //   chart: {
+  //     height: 200,
+  //     type: "radialBar",
+  //   },
+  //   series: [this.chartvaluedata],
+  //   colors: ["#8CC4F2"],
+  //   plotOptions: {
+  //     radialBar: {
+  //       startAngle: -90,
+  //       endAngle: 90,
+  //       track: {
+  //         background: '#F0F0F0',
+  //         startAngle: -90,
+  //         endAngle: 90,
+  //       },
+  //       dataLabels: {
+  //         name: {
+  //           show: false,
+  //         },
+  //         value: {
+  //           fontSize: "20px",
+  //           show: true
+  //         }
+  //       }
+  //     }
+  //   },
+  //   fill: {
+  //     type: "gradient",
+  //     gradient: {
+  //       shade: "dark",
+  //       type: "horizontal",
+  //       gradientToColors: ["#8CC4F2"],
+  //       stops: [0, 100]
+  //     }
+  //   },
+  //   stroke: {
+  //     lineCap: "butt"
+  //   },
+  //   labels: ["Progress"]
+  // };
+  
+  
+  // new ApexCharts(document.querySelector("#chart2"), options2).render();
+  this.persentaheofriskaccount=10
+  let gradiantcolorrisk=["#FF1E00"]
+  if(this.persentaheofriskaccount<30){
+    gradiantcolorrisk= ["#0065fe"]
+  }
+  var options1 = {
+    chart: {
+      height: 200,
+      type: "radialBar",
+    },
+    series: [this.persentaheofriskaccount],
+    colors: ["#0065fe"],
+    plotOptions: {
+      radialBar: {
+        startAngle: -90,
+        endAngle: 90,
+        track: {
+          background: '#F0F0F0',
+          startAngle: -90,
+          endAngle: 90,
+        },
+        dataLabels: {
+          name: {
+            show: false,
+          },
+          value: {
+            fontSize: "20px",
+            show: true
+          }
+        }
+      }
+    },
+    fill: {
+      type: "gradient",
+      gradient: {
+        shade: "dark",
+        type: "horizontal",
+        gradientToColors: gradiantcolorrisk,
+        stops: [0, 100]
+      }
+    },
+    stroke: {
+      lineCap: "butt"
+    },
+    labels: ["Progress"]
+  };
+  
+  
+  new ApexCharts(document.querySelector("#ceichart"), options1).render();
+  this.cei=60
+    let gradiantcolor=["#0065fe"]
+    if(this.cei<30){
+      gradiantcolor=["#0065fe"]
+    }
+  
+  var options3 = {
+    chart: {
+      height: 200,
+      type: "radialBar",
+    },
+    series: [this.cei],
+    colors:["#0065fe"],// ["#003366"],
+    plotOptions: {
+      radialBar: {
+        startAngle: -90,
+        endAngle: 90,
+        track: {
+          background: '#F0F0F0',
+          startAngle: -90,
+          endAngle: 90,
+        },
+        dataLabels: {
+          name: {
+            show: false,
+          },
+          value: {
+            fontSize: "20px",
+            show: true
+          }
+        }
+      }
+    },
+    fill: {
+      type: "gradient",
+      gradient: {
+        shade: "dark",
+        type: "horizontal",
+        gradientToColors: gradiantcolor,
+        stops: [0, 100]
+      }
+    },
+    stroke: {
+      lineCap: "butt"
+    },
+    labels: ["Progress"]
+  };
+  
+  
+  new ApexCharts(document.querySelector("#highriskchart3"), options3).render();
+  
+  
+  }
+
+  
 
 }

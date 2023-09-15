@@ -1,0 +1,265 @@
+
+<div class="graph-card">
+    <div class="card-head">
+        <h2 class="card-head title">RateGain Dashboard<i
+                class="fa-solid fa-rotate-right"></i>
+        </h2>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="row cardspace">
+        <div class="col-md-3">
+            <div class="white-card">
+                <i class="fa-solid fa-rotate-right"></i>
+                <div class="card-head">
+                    
+                    <h2><b>Year To Date Customer Count </b></h2>
+                </div>
+            
+                <div class="status">
+                    <h1 class="green">153</h1>
+                </div>
+    
+    
+                <!-- <div class="col-md-9 float-md-start">
+                    <h3>&#8377; 7,343,335.63</h3>
+                </div>
+                <div class="col-md-3 float-md-end graph">
+                    <p class="green"><img src="../../../assets/trend.png" alt=""> 16.9%</p>
+                </div> -->
+                <div class="clearfix"></div>
+            </div>
+    
+    
+        </div>
+        <div class="col-md-3">
+            <div class="white-card">
+                <i class="fa-solid fa-rotate-right"></i>
+                <div class="card-head">
+                    <h2><b>Year To Date Invoice Count</b></h2>
+                </div>
+                 <div class="status">
+                    <h1 class="red">589153</h1>
+                </div> 
+                <div class="clearfix"></div>
+    
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="white-card">
+                <i class="fa-solid fa-rotate-right"></i>
+                <div class="card-head">
+                    <h2><b>Year To Date Sale Value</b></h2>
+                </div>
+               
+                <div class="status">
+                    <h1 class="green">4446.23 Cr</h1>
+                </div>
+    
+               
+                <div class="clearfix"></div>
+    
+    
+            </div>
+    
+        </div>
+
+        <div class="col-md-3">
+            <div class="white-card">
+                <i class="fa-solid fa-rotate-right"></i>
+                <div class="card-head">
+                    <h2><b>Year To Date Purchase Value</b></h2>
+                </div>
+                <div class="status">
+                    <h1 class="red">2742.83 Cr</h1>
+                </div>
+    
+               
+                <div class="clearfix"></div>
+    
+    
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    
+
+       
+        
+ 
+
+
+    <div class="table-responsive table-scroll cardspace">
+        <table class="table">
+            <tr class="txt">
+                <th><input type="checkbox" class="check "></th>
+                <th>Entity</th>
+                <th>Invoice Count</th>
+                <th>Invoice Total</th>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" class="check"></td>
+                <td>QuickBooks</td>
+                <td>20037</td>
+                <td>796.90 Cr</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="check"></td>
+                <td>QuickBooks</td>
+                <td>20037</td>
+                <td>796.90 Cr</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="check"></td>
+                <td>QuickBooks</td>
+                <td>20037</td>
+                <td>796.90 Cr</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="graph-card">
+
+                <div class="card-head">
+                    <h2 class="card-head">Integration Wise <i class="fa-solid fa-rotate-right"></i>
+                    </h2>
+                    <div class="dropdown">
+                        <button class=" primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-chart-simple"></i> &nbsp;Bar Chart
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Line chart</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div id="chart">
+                    <apx-chart [series]="chartOptions2.series" [chart]="chartOptions2.chart"
+                        [dataLabels]="chartOptions2.dataLabels" [plotOptions]="chartOptions2.plotOptions"
+                        [yaxis]="chartOptions2.yaxis" [legend]="chartOptions2.legend" [fill]="chartOptions2.fill"
+                        [stroke]="chartOptions2.stroke" [tooltip]="chartOptions2.tooltip"
+                        [xaxis]="chartOptions2.xaxis"></apx-chart>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="graph-card">
+
+                <div class="card-head">
+                    <h2 class="card-head">Top 5 Ledger by Overdue Amount <i class="fa-solid fa-rotate-right"></i>
+                    </h2>
+                    <div class="dropdown">
+                        <button class=" primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-chart-simple"></i> &nbsp;Bar Chart
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Line Chart</a></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div id="chart">
+                    <apx-chart [series]="chartOptions3.series" [chart]="chartOptions3.chart"
+                        [dataLabels]="chartOptions3.dataLabels" [plotOptions]="chartOptions3.plotOptions"
+                        [yaxis]="chartOptions3.yaxis" [legend]="chartOptions3.legend" [fill]="chartOptions3.fill"
+                        [stroke]="chartOptions3.stroke" [tooltip]="chartOptions3.tooltip"
+                        [xaxis]="chartOptions3.xaxis"></apx-chart>
+                </div>
+
+            </div>
+        </div>
+
+    <!-- <div class="pagination">
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+    </div> -->
+</div>
+
+<div class="col-md-12 col-lg-12">
+    <div class="graph-card">
+
+        <div class="card-head">
+            <h2 class="card-head">Segment Wise<i class="fa-solid fa-rotate-right"></i>
+            </h2>
+            <div class="dropdown">
+                <button class=" primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-chart-simple"></i> &nbsp;Bar Chart
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Line Chart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div id="chart">
+            <apx-chart [series]="chartOptions4.series" [chart]="chartOptions4.chart"
+                [dataLabels]="chartOptions4.dataLabels" [plotOptions]="chartOptions4.plotOptions"
+                [yaxis]="chartOptions4.yaxis" [legend]="chartOptions4.legend" [fill]="chartOptions4.fill"
+                [stroke]="chartOptions4.stroke" [tooltip]="chartOptions4.tooltip"
+                [xaxis]="chartOptions4.xaxis"></apx-chart>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="col-md-12 col-lg-12">
+    <div class="graph-card">
+
+        <div class="card-head">
+            <h2 class="card-head">Top 5 Customer<i class="fa-solid fa-rotate-right"></i>
+            </h2>
+            <div class="dropdown">
+                <button class=" primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-chart-simple"></i> &nbsp;Bar Chart
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Line Chart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div id="chart">
+            <apx-chart [series]="chartOptions5.series" [chart]="chartOptions5.chart"
+                [dataLabels]="chartOptions5.dataLabels" [plotOptions]="chartOptions5.plotOptions"
+                [yaxis]="chartOptions5.yaxis" [legend]="chartOptions5.legend" [fill]="chartOptions5.fill"
+                [stroke]="chartOptions5.stroke" [tooltip]="chartOptions5.tooltip"
+                [xaxis]="chartOptions5.xaxis"></apx-chart>
+        </div>
+
+    </div>
+</div>
+
+
