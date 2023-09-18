@@ -233,29 +233,7 @@
                     7736338240</td>
             </tr>
 
-            <!-- <tr>
-                <td><input type="checkbox" class="check"></td>
-                <td>4</td>
-                <td>ishan_trailer</td>
-                <td>120.00</td>
-               
-            </tr>
-
-            <tr>
-                <td><input type="checkbox" class="check"></td>
-                <td>5</td>
-                <td>ishan_trailer</td>
-                <td>120.00</td>
-               
-            </tr>
-
-            <tr>
-                <td><input type="checkbox" class="check"></td>
-                <td>6</td>
-                <td>ishan_trailer</td>
-                <td>120.00</td>
-               
-            </tr> -->
+           
         </table>
     </div>
 
@@ -270,6 +248,45 @@
               <li class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
           </nav>
+    </div>
+</div>
+
+
+<div class="col-md-12 col-lg-12">
+    <div class="graph-card">
+
+        <div class="card-head">
+            <!-- <h2 class="card-head">Top 5 Customer<i class="fa-solid fa-rotate-right"></i>
+            </h2> -->
+            <div class="dropdown">
+                <button class="primary-drop dropdown-toggle mb-4 btnspace" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <!-- <i class="fa-solid fa-chart-simple"></i> &nbsp; -->
+                    Current Year
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Last Month</a></li>
+                    <li><a class="dropdown-item" href="#">Current Month</a></li>
+                </ul>
+                <button class="mb-4 primary-drop dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-chart-simple"></i> &nbsp;Bar Chart
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Line Chart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div id="chart">
+            <apx-chart [series]="chartOptions5.series" [chart]="chartOptions5.chart"
+                [dataLabels]="chartOptions5.dataLabels" [plotOptions]="chartOptions5.plotOptions"
+                [yaxis]="chartOptions5.yaxis" [legend]="chartOptions5.legend" [fill]="chartOptions5.fill"
+                [stroke]="chartOptions5.stroke" [tooltip]="chartOptions5.tooltip"
+                [xaxis]="chartOptions5.xaxis"></apx-chart>
+        </div>
+
     </div>
 </div>
 

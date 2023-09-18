@@ -125,7 +125,7 @@ export class SidebarComponent {
       },
        {
         link_name: "Ageing Report",
-        link: "/features/ageing",
+        link: "/features/reports/ageing",
         icon: "fa-solid fa-file-lines",
         sub_menu: []
       },

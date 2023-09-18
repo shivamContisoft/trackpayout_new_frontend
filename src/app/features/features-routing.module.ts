@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { LedgerComponent } from './ledger/ledger.component';
-import { StockItemComponent } from './stock-item/stock-item.component';
-import { AmountComponent } from './amount/amount.component';
+// import { DashboardComponent } from './dashboard/dashboard.component';
+// import { LedgerComponent } from './ledger/ledger.component';
+
+// import { AmountComponent } from './amount/amount.component';
 import { StockSummaryComponent } from './stock-summary/stock-summary.component';
-import { AgeingComponent } from './ageing/ageing.component';
+// import { AgeingComponent } from './ageing/ageing.component';
 import { LegalSupportComponent } from './legal-support/legal-support.component';
 import { TaskComponent } from './task/task.component';
 import { BillDiscountComponent } from './bill-discount/bill-discount.component';
@@ -77,30 +77,24 @@ const routes: Routes = [
   
 
 
-  {
-    path:'dashboard',
-    component:DashboardComponent
-  },
-  {
-    path:'ledger',
-    component: LedgerComponent
-  },
-  {
-    path:'stock-item',
-    component: StockItemComponent
-  },
-  {
-    path:'amount',
-    component: AmountComponent
-  },
+ 
+  // {
+  //   path:'ledger',
+  //   component: LedgerComponent
+  // },
+
+  // {
+  //   path:'amount',
+  //   component: AmountComponent
+  // },
   {
     path:'stock-summary',
     component: StockSummaryComponent
   },
-  {
-    path:'ageing',
-    component: AgeingComponent
-  },
+  // {
+  //   path:'ageing',
+  //   component: AgeingComponent
+  // },
   {
     path:'legal-support',
     component: LegalSupportComponent
