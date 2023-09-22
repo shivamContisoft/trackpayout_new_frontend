@@ -1,0 +1,49 @@
+.login {
+    min-height: 100vh;
+  }
+  
+  .bg-image {
+    background-image: url('../../../assets/reset.png');
+    background-size: cover;
+    background-position: center;
+    height: 490px;
+    width: 550px;
+    margin-left: 20px;
+    margin-top: 60px
+   
+    // background-size: cover;
+    // height: 100vh;
+    // padding: 50px;
+  }
+  
+  .login-heading {
+    font-weight: 300;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    text-transform: capitalize;
+  }
+
+  .title{
+    position: relative;
+    top: 535px;
+    font-size: 20px;
+    left: 115px
+  }
+
+  .tagline{
+    position: relative;
+    top: 567px;
+    right: 128px;
+    font-size: 14px;
+  }
+
+  // .floating {
+  //   animation-name: floating;
+  //   animation-duration: 5s;
+  //   animation-iteration-count: infinite;
+  //   animation-timing-function: ease-in-out;
+  // }
